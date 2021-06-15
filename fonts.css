@@ -1,0 +1,20 @@
+@font-face {
+    font-family: "pt_serifbold";
+    src: url("fonts/ptserif-bold-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "MuseoSansCyrl500";
+    src: url('fonts/MuseoSansCyrl500.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "MuseoSansCyrl700";
+    src: url('fonts/MuseoSansCyrl700.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}

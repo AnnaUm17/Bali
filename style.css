@@ -1,0 +1,381 @@
+body {
+    margin: 0;
+}
+
+.wrapper {
+    background: top no-repeat url(img/bg.png);
+    background-size: cover;
+    height: 100vh;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 90px 0 0 0;
+    width: 88%;
+}
+
+.logo {
+    background: top no-repeat url(img/logo.svg);
+    width: 147px;
+    height: 55px;
+    padding-left: 8.8vw;
+}
+
+#menu-burger__toggle,
+.menu-adapt {
+    display: none;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    padding-top: 11px;
+}
+
+.menu__item {
+    margin-right: 37px;
+    font: 700 22px/26px 'MuseoSansCyrl700', arial, helvetica, sans-serif;
+    color: #F8EEE4;
+    text-decoration: none;
+    transition: text-shadow 0.5s ease;
+}
+
+.menu__item:last-child {
+    margin-right: 0;
+}
+
+.menu__item:hover {
+    text-shadow: #F8EEE4 0 0 0.5em;
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-content {
+    padding: 12.4vh 0 0 10.4vw;
+}
+
+.main-content__title {
+    font: 700 280px/371px 'pt_serifbold', arial, helvetica, sans-serif;
+    color: #F8EEE4;
+    opacity: 0.4;
+    margin: 0;
+}
+
+.main-content__subtitle {
+    font: 700 98px/130px 'pt_serifbold', arial, helvetica, sans-serif;
+    color: #F8EEE4;
+    margin: 0;
+    position: relative;
+    top: -145px;
+    left: 4.3vw;
+}
+
+.main-content__text {
+    font: 500 22px/26px 'MuseoSansCyrl500', arial, helvetica, sans-serif;
+    color: #F8EEE4;
+    margin: 0;
+    width: 550px;
+    position: relative;
+    top: -125px;
+    left: 1.1vw;
+}
+
+.main-content__button {
+    display: inline-block;
+    color: #fff;
+    background: #D4BEA3;
+    font: 700 22px/26px 'MuseoSansCyrl700', arial, helvetica, sans-serif;
+    padding: 18px 90px;
+    text-decoration: none;
+    border-radius: 48px;
+    position: relative;
+    top: -89px;
+    left: 1.1vw;
+    transition: box-shadow 0.5s ease;
+}
+
+.main-content__button:hover {
+    box-shadow: 0 0 35px #fff;
+}
+
+.main-picture {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.main-picture__picture-one {
+    background: center no-repeat url(img/picture-1.png);
+    width: 16.5vw;
+    height: 39vh;
+    background-size: cover;
+    margin-right: 31px;
+    margin-top: 137px;
+}
+
+.main-picture__picture-two {
+    background: center no-repeat url(img/picture-2.png);
+    width: 15vw;
+    height: 35vh;
+    background-size: cover;
+    margin-right: 32px;
+    margin-top: 133px;
+}
+
+.main-picture__picture-three {
+    background: center no-repeat url(img/picture-3.png);
+    width: 10.9vw;
+    height: 35vh;
+    background-size: cover;
+    margin-top: 133px;
+}
+
+@media (min-width: 1921px) {
+    .header {
+        width: 70%;
+        margin-bottom: 10vh;
+    }
+    .logo {
+        padding-left: 0;
+    }
+    .main {
+        margin: 0 auto;
+        width: 70%;
+    }
+    .main-content {
+        padding: 0 2vw 0 0;
+    }
+}
+
+@media (max-width: 1366px) {
+    .header {
+        padding: 63px 0 0 0;
+    }
+    .logo {
+        background: top no-repeat url(img/logo-1366.svg);
+        width: 104px;
+        height: 39px;
+    }
+    .menu {
+        padding-top: 8px;
+    }
+    .menu__item {
+        margin-right: 25px;
+        font: 700 16px/19px 'MuseoSansCyrl700', arial, helvetica, sans-serif;
+    }
+    .main-content__title {
+        font: 700 14.6vw/265px 'pt_serifbold', arial, helvetica, sans-serif;
+    }
+    .main-content__subtitle {
+        font: 700 5.13vw/93px 'pt_serifbold', arial, helvetica, sans-serif;
+        top: -103px;
+        left: 4.3vw;
+    }
+    .main-content__text {
+        font: 500 16px/19px 'MuseoSansCyrl500', arial, helvetica, sans-serif;
+        top: -11.7vh;
+        left: 1.1vw;
+        width: 400px;
+    }
+    .main-content__button {
+        font: 700 16px/19px 'MuseoSansCyrl700', arial, helvetica, sans-serif;
+        padding: 12px 62px;
+        top: -8.6vh;
+    }
+    .main-picture__picture-one {
+        margin-right: 22px;
+        margin-top: 95px;
+    }
+    .main-picture__picture-two {
+        margin-right: 22px;
+        margin-top: 91px;
+    }
+    .main-picture__picture-three {
+        background-size: cover;
+        margin-top: 91px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .header {
+        padding: 63px 0 0 0;
+        width: 92%;
+    }
+    .logo {
+        padding-left: 0;
+    }
+    .menu {
+        padding-top: 12px;
+    }
+    .menu__item {
+        margin-right: 25px;
+    }
+    .menu__item:last-child {
+        margin-right: -5px;
+    }
+    .main-content {
+        padding: 12.8vh 0 0 4vw;
+    }
+    .main-content__title {
+        font: 700 19.6vw/265px 'pt_serifbold', arial, helvetica, sans-serif;
+    }
+    .main-content__subtitle {
+        font: 700 6.85vw/93px 'pt_serifbold', arial, helvetica, sans-serif;
+        top: -13.5vh;
+        left: 5.8vw;
+    }
+    .main-content__text {
+        left: 1.5vw;
+        width: 38vw;
+    }
+    .main-content__button {
+        left: 1.6vw;
+        top: -8.5vh;
+    }
+    .main-picture__picture-one {
+        width: 22.1vw;
+        margin-top: 100px;
+    }
+    .main-picture__picture-two {
+        width: 20vw;
+        margin-top: 99px;
+    }
+    .main-picture__picture-three {
+        width: 3.6vw;
+        margin-top: 97px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        padding: 42px 0 0 0;
+        width: 78%;
+    }
+    .menu,
+    .main-picture__picture-one,
+    .main-picture__picture-two,
+    .main-picture__picture-three {
+        display: none;
+    }
+    #menu-burger__toggle {
+        opacity: 0;
+    }
+    .menu-burger__mobile {
+        display: flex;
+        align-items: center;
+        position: fixed;
+        top: 52px;
+        right: 34px;
+        width: 25px;
+        height: 26px;
+        cursor: pointer;
+        z-index: 3;
+    }
+    .menu-burger__mobile>span,
+    .menu-burger__mobile>span::before,
+    .menu-burger__mobile>span::after {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        background-color: #FCF5ED;
+    }
+    .menu-burger__mobile>span::before {
+        content: '';
+        top: -7px;
+    }
+    .menu-burger__mobile>span::after {
+        content: '';
+        top: 7px;
+    }
+    .menu-adapt {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 173px 0;
+        text-align: center;
+        background: #fff;
+        max-width: 100%;
+        transition: left .5s ease-out;
+        z-index: 2;
+    }
+    .menu-adapt__item {
+        display: inline-block;
+        margin: 0;
+        padding: 12px 0;
+        font: 700 30px/36px 'MuseoSansCyrl700', arial, helvetica, sans-serif;
+        color: #000;
+        text-decoration: none;
+        transition: font-size 0.5s ease;
+    }
+    .menu-adapt__item:hover {
+        font-size: 32px;
+    }
+    #menu-burger__toggle:checked~.menu-burger__mobile>span {
+        transform: rotate(45deg);
+        top: -13px;
+        left: 10px;
+        background: #172F27;
+    }
+    #menu-burger__toggle:checked~.menu-burger__mobile>span::before {
+        top: 0;
+        transform: rotate(0);
+        background: #172F27;
+    }
+    #menu-burger__toggle:checked~.menu-burger__mobile>span::after {
+        top: 0;
+        transform: rotate(90deg);
+        background: #172F27;
+    }
+    #menu-burger__toggle:checked~.menu-adapt {
+        visibility: visible;
+        left: 0;
+    }
+    .main-content {
+        padding: 5.8vh 0 0 4vw;
+    }
+    .main-content__title {
+        font-size: 45.5vw;
+    }
+    .main-content__subtitle {
+        font: 700 16vw/79px 'pt_serifbold', arial, helvetica, sans-serif;
+        top: -97px;
+        left: 16vw;
+        margin-bottom: 15px;
+        width: 80vw;
+    }
+    .main-content__text {
+        top: -76px;
+        left: 7vw;
+        width: 78vw;
+        text-align: center;
+        font: 500 18px/22px 'MuseoSansCyrl500', arial, helvetica, sans-serif;
+    }
+    .main-content__button {
+        left: 27%;
+        top: 0;
+        padding: 12px 16.5vw;
+    }
+}
+
+@media (max-width: 375px) {
+    .wrapper {
+        background: top no-repeat url(img/bg-375.png);
+        background-size: cover;
+    }
+    .main-content__button {
+        left: 16.2vw;
+        top: -6.1vh;
+        padding: 12px 16.5vw;
+    }
+}
