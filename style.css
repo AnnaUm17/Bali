@@ -264,6 +264,7 @@ body {
         width: 100%;
         height: 3px;
         background-color: #FCF5ED;
+        transition: 0.5s;
     }
     .menu-burger__mobile>span::before {
         content: '';
